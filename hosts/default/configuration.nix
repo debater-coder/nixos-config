@@ -80,7 +80,24 @@
     hyprpaper
     git
     gh
+    waybar
+    mako
+    libnotify
+    rofi-wayland
+    firefox
   ];
+
+  xdg.portal.enable = true;
+  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+
+  security.rtkit.enable = true;
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+    jack.enable = true;
+  };
 
   programs.hyprland = {
     enable = true;

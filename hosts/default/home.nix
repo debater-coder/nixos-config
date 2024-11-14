@@ -84,4 +84,36 @@
       update = "sudo nixos-rebuild switch --flake ~/nixos#default";
     };
   };
+
+  wayland.windowManager.hyprland = {
+    enable = true;
+    settings = {
+      "$mod" = "SUPER";
+      misc = {
+        disable_hyrpland_logo = true;
+	disable_splash_rendering = true;
+      };
+      bind = [
+        "$mod, RETURN, exec, kitty"
+	"$mod, H, movefocus, l"
+	"$mod, J, movefocus, d"
+	"$mod, k, movefocus, u"
+	"$mod, l, movefocus, r"
+	"$mod, Q, killactive"
+	"$mod, F, fullscreen"
+	"$mod, T, togglefloating"
+	"$mod, SHIFT, H, movewindow, l"
+	"$mod, SHIFT, J, movewindow, d"
+	"$mod, SHIFT, K, movewindow, u"
+	"$mod, SHIFT, L, movewindow, r"
+	"$mod, mouse:272, movewindow"
+	"$mod, SHIFT, H, resizewindow, l"
+	"$mod, SHIFT, J, resizewindow, d"
+	"$mod, SHIFT, K, resizewindow, u"
+	"$mod, SHIFT, L, resizewindow, r"
+	"$mod, mouse:273, resizewindow"
+      ];
+    };
+  };
+
 }
