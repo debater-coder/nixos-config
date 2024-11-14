@@ -87,7 +87,7 @@
 
   wayland.windowManager.hyprland = {
     enable = true;
-    systemd.enable = false;
+    systemd.enable = true;
     settings = {
       "$mod" = "SUPER";
       "$mod_s" = "SUPER_SHIFT";
