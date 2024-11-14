@@ -91,6 +91,11 @@
     userEmail = "52619668+debater-coder@users.noreply.github.com";
   };
 
+  programs.neovim = {
+    enable = true;
+    extraConfig = "set number relativenumber";
+  };
+
   wayland.windowManager.hyprland = {
     enable = true;
     systemd.enable = false;
