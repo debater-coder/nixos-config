@@ -115,10 +115,12 @@
 
   services.greetd = {
     enable = true;
-    settings = {
-      default_session = {
-        command = "Hyprland";
+    settings = rec {
+      initial_session = {
+        command = "exec uwsm start hyprland.desktop";
+        user = "hamzah";
       };
+      default_session = initial_session;
     };
   };
 
