@@ -109,11 +109,11 @@
 	"$mod_s, K, movewindow, u"
 	"$mod_s, L, movewindow, r"
 	"$mod, mouse:272, movewindow"
-	"$mod_c, H, resizewindow, l"
-	"$mod_c, J, resizewindow, d"
-	"$mod_c, K, resizewindow, u"
-	"$mod_c, L, resizewindow, r"
-	"$mod, mouse:273, resizewindow"
+	"$mod_c, H, resizeactive, l"
+	"$mod_c, J, resizeactive, d"
+	"$mod_c, K, resizeactive, u"
+	"$mod_c, L, resizeactive, r"
+	"$mod, mouse:273, resizeactive"
       ];
     };
   };
