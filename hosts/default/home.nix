@@ -110,7 +110,7 @@
 	disable_splash_rendering = true;
       };
       decoration = {
-        rounding = 16;
+        rounding = 8;
         inactive_opacity = 0.75;
       };
       bind = [
