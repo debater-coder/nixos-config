@@ -104,6 +104,15 @@
     package = inputs.hyprland.packages."${pkgs.system}".hyprland;
   };
 
+  programs.uwsm = {
+    enable = true;
+    waylandCompositors.hyprland = {
+      binPath = "/run/current-system/sw/bin/Hyprland";
+      comment = "Hyprland session managed by uwsm";
+      prettyName = "Hyprland";
+    };
+  };
+  
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Some programs need SUID wrappers, can be configured further or are
