@@ -255,7 +255,7 @@ label {
 	"$mod_c, K, resizeactive, 0 -10"
 	"$mod_c, L, resizeactive, 10 0"
 	"$mod, mouse:273, resizewindowpixel"
-        "$mod, DELETE, exec, swaylock"
+        "$mod, DELETE, exec, swaylock -u"
       ];
     };
   };
