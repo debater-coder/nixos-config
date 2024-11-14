@@ -108,6 +108,16 @@
 
   programs.hyprlock.enable = true;
 
+  services.greetd = {
+    enable = true;
+    settings = {
+      default_session = {
+        command = "Hyprland";
+      };
+    };
+  };
+
+
   programs.uwsm = {
     enable = true;
     waylandCompositors.hyprland = {
