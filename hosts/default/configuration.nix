@@ -106,6 +106,8 @@
     package = inputs.hyprland.packages."${pkgs.system}".hyprland;
   };
 
+  programs.hyprlock.enable = true;
+
   programs.uwsm = {
     enable = true;
     waylandCompositors.hyprland = {
