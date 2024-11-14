@@ -85,6 +85,12 @@
     };
   };
 
+  programs.git = {
+    enable = true;
+    userName = "debater-coder";
+    userEmail = "52619668+debater-coder@users.noreply.github.com"
+  }
+
   wayland.windowManager.hyprland = {
     enable = true;
     systemd.enable = false;
@@ -98,6 +104,7 @@
       };
       bind = [
         "$mod, RETURN, exec, kitty"
+	"$mod, M, movefocus, l"
 	"$mod, H, movefocus, l"
 	"$mod, J, movefocus, d"
 	"$mod, k, movefocus, u"
