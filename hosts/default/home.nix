@@ -249,12 +249,13 @@ label {
 	"$mod_s, J, movewindow, d"
 	"$mod_s, K, movewindow, u"
 	"$mod_s, L, movewindow, r"
-	"$mod, mouse:272, movewindow"
+	"$mod, mouse:272, movewindowpixel"
 	"$mod_c, H, resizeactive, -10 0"
 	"$mod_c, J, resizeactive, 0 10"
 	"$mod_c, K, resizeactive, 0 -10"
 	"$mod_c, L, resizeactive, 10 0"
-	"$mod, mouse:273, resizewindow"
+	"$mod, mouse:273, resizewindowpixel"
+        "$mod, DELETE, exec, swaylock"
       ];
     };
   };
