@@ -89,8 +89,10 @@
     enable = true;
     settings = {
       "$mod" = "SUPER";
+      "$mod_s" = "SUPER_SHIFT";
+      "$mod_c" = "SUPER_CTRL";
       misc = {
-        disable_hyrpland_logo = true;
+        disable_hyprland_logo = true;
 	disable_splash_rendering = true;
       };
       bind = [
@@ -102,15 +104,15 @@
 	"$mod, Q, killactive"
 	"$mod, F, fullscreen"
 	"$mod, T, togglefloating"
-	"$mod, SHIFT, H, movewindow, l"
-	"$mod, SHIFT, J, movewindow, d"
-	"$mod, SHIFT, K, movewindow, u"
-	"$mod, SHIFT, L, movewindow, r"
+	"$mod_s, H, movewindow, l"
+	"$mod_s, J, movewindow, d"
+	"$mod_s, K, movewindow, u"
+	"$mod_s, L, movewindow, r"
 	"$mod, mouse:272, movewindow"
-	"$mod, SHIFT, H, resizewindow, l"
-	"$mod, SHIFT, J, resizewindow, d"
-	"$mod, SHIFT, K, resizewindow, u"
-	"$mod, SHIFT, L, resizewindow, r"
+	"$mod_c, H, resizewindow, l"
+	"$mod_c, J, resizewindow, d"
+	"$mod_c, K, resizewindow, u"
+	"$mod_c, L, resizewindow, r"
 	"$mod, mouse:273, resizewindow"
       ];
     };
