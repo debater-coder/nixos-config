@@ -87,6 +87,7 @@
     firefox
     nerdfonts
     xwayland
+    swaylock
   ];
 
   fonts.packages = with pkgs; [
@@ -99,6 +100,7 @@
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
   security.rtkit.enable = true;
+  security.pam.services.swaylock = {};
   services.pipewire = {
     enable = true;
     alsa.enable = true;
