@@ -55,7 +55,10 @@
     description = "Hamzah";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
+    shell = pkgs.zsh;
   };
+
+  programs.zsh.enable = true;
 
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
@@ -79,7 +82,10 @@
     gh
   ];
 
-  programs.hyprland.enable = true;
+  programs.hyprland = {
+    enable = true;
+    package = inputs.hyprland.packages."${pkgs.system}".hyprland;
+  };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
