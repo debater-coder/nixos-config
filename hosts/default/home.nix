@@ -138,6 +138,9 @@
 	"$mod_c, L, resizeactive, 10 0"
 	"$mod, mouse:273, resizewindowpixel"
         "$mod, DELETE, exec, swaylock -u"
+        ''
+        ALT, SPACE, exec, rofi -show combi -modes combi -combi-modes "window,drun,run"
+        ''
       ];
     };
   };
