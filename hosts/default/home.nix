@@ -88,7 +88,7 @@
   programs.git = {
     enable = true;
     userName = "debater-coder";
-    userEmail = "52619668+debater-coder@users.noreply.github.com"
+    userEmail = "52619668+debater-coder@users.noreply.github.com";
   };
 
   wayland.windowManager.hyprland = {
