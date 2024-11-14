@@ -88,6 +88,8 @@
     nerdfonts
   ];
 
+  services.getty.autologinUser = "hamzah";
+
   fonts.packages = with pkgs; [
     (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" "JetBrainsMono"]; })
   ];
@@ -112,18 +114,6 @@
   };
 
   programs.hyprlock.enable = true;
-
-  services.greetd = {
-    enable = true;
-    settings = rec {
-      initial_session = {
-        command = "zsh -c 'uwsm start hyprland.desktop'";
-        user = "hamzah";
-      };
-      default_session = initial_session;
-    };
-  };
-
 
   programs.uwsm = {
     enable = true;
