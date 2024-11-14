@@ -117,7 +117,7 @@
     enable = true;
     settings = rec {
       initial_session = {
-        command = "exec uwsm start hyprland.desktop";
+        command = "uwsm start hyprland.desktop";
         user = "hamzah";
       };
       default_session = initial_session;
