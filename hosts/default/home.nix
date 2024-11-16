@@ -144,7 +144,19 @@
         ''
         ALT, SPACE, exec, rofi -show combi -modes combi -combi-modes "window,drun,run"
         ''
-      ];
+      ] ++ (
+        # workspaces
+        # binds $mod + [shift +] {1..9} to [move to] workspace {1..9}
+        builtins.concatLists (builtins.genList (i:
+            let ws = i + 1;
+            in [
+              "$mod, code:1${toString i}, workspace, ${toString ws}"
+              "$mod SHIFT, code:1${toString i}, movetoworkspace, ${toString ws}"
+            ]
+          )
+        9)
+      );
+
       bindm = [
 	"$mod, mouse:273, resizewindow"
 	"$mod, mouse:272, movewindow"
@@ -157,6 +169,10 @@
           , switch:off:Lid Switch, exec, hyprctl keyword monitor "eDP-1, preferred, auto-down, 1.6"
         ''
       ];
+      exec-once = [
+        "waybar"
+      ];
+      input.touchpad.natural_scroll = true;
     };
   };
 }
