@@ -69,13 +69,15 @@
   #
   home.sessionVariables = {
     EDITOR = "nvim";
+    WLR_NO_HARDWARE_CURSORS = "1";
   };
 
   home.pointerCursor = {
     gtk.enable = true;
+    x11.enable = true;
     package = pkgs.bibata-cursors;
     name = "Bibata-Modern-Classic";
-    size = 16;
+    size = 24;
   };
 
 
@@ -123,7 +125,7 @@
     enable = true;
     systemd.enable = false;
     settings = {
-      env = "WLR_NO_HARDWARE_CURSORS,1";
+      cursor.hide_on_key_press = false;
       monitor = [
         "desc:Dell Inc. DELL S2721QS 5971N43, preferred, 0x0, 1.5"  # monitor left
         "eDP-1, preferred, auto-down, 1.6"  # laptop screen
