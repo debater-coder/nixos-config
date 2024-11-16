@@ -71,6 +71,14 @@
     EDITOR = "nvim";
   };
 
+  home.pointerCursor = {
+    gtk.enable = true;
+    package = pkgs.bibata-cursors;
+    name = "Bibata-Modern-Classic";
+    size = 16;
+  };
+
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
@@ -175,6 +183,10 @@
       input.touchpad = {
         natural_scroll = true;
         scroll_factor = 0.2;
+      };
+
+      cursor = {
+        no_hardware_cursors = true;
       };
     };
   };

@@ -88,6 +88,7 @@
     nerdfonts
     xwayland
     swaylock
+    bibata-cursors
   ];
 
   programs.waybar.enable = true;
