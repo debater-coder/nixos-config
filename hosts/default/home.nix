@@ -123,6 +123,7 @@
     enable = true;
     systemd.enable = false;
     settings = {
+      env = "WLR_NO_HARDWARE_CURSORS,1";
       monitor = [
         "desc:Dell Inc. DELL S2721QS 5971N43, preferred, 0x0, 1.5"  # monitor left
         "eDP-1, preferred, auto-down, 1.6"  # laptop screen
