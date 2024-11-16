@@ -89,6 +89,7 @@
     xwayland
     swaylock
     bibata-cursors
+    gnome.gnome-themes-extra
   ];
 
   programs.waybar.enable = true;
