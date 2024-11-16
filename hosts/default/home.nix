@@ -125,7 +125,6 @@
       };
       bind = [
         "$mod, RETURN, exec, kitty"
-	"$mod, M, movefocus, l"
 	"$mod, H, movefocus, l"
 	"$mod, J, movefocus, d"
 	"$mod, k, movefocus, u"
