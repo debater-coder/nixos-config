@@ -127,9 +127,9 @@
     settings = {
       cursor.hide_on_key_press = false;
       monitor = [
-        "desc:Dell Inc. DELL S2721QS 5971N43, preferred, 0x0, 1.5"  # monitor left
-        "eDP-1, preferred, auto-down, 1.6"  # laptop screen
-        "desc:Dell Inc. DELL S2721QS DV61N43, preferred, auto-right, 1.5"  # monitor right
+        "eDP-1, preferred, 0x0, 1.6"  # laptop screen
+        "desc:Dell Inc. DELL S2721QS DV61N43, preferred, auto-right, 1.5"  # monitor left
+        "desc:Dell Inc. DELL S2721QS 5971N43, preferred, auto-right, 1.5"  # monitor right
         ", preferred, auto, 1"  # random monitors
       ];
       "$mod" = "SUPER";
@@ -186,7 +186,7 @@
           , switch:on:Lid Switch, exec, hyprctl keyword monitor "eDP-1, disable"
         ''
         ''
-          , switch:off:Lid Switch, exec, hyprctl keyword monitor "eDP-1, preferred, auto-down, 1.6"
+          , switch:off:Lid Switch, exec, hyprctl keyword monitor "eDP-1, preferred, 0x0, 1.6"
         ''
       ];
       exec-once = [
