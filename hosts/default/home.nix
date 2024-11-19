@@ -72,24 +72,6 @@
     WLR_NO_HARDWARE_CURSORS = "1";
   };
 
-  home.pointerCursor = {
-    gtk.enable = true;
-    x11.enable = true;
-    package = pkgs.bibata-cursors;
-    name = "Bibata-Modern-Classic";
-    size = 24;
-  };
-
-
-  gtk = {
-    enable = true;
-    theme = {
-      package = pkgs.gnome-themes-extra;
-      name = "Adwaita-dark";
-    };
-  };
-
-
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
@@ -129,8 +111,8 @@
       cursor.hide_on_key_press = false;
       monitor = [
         "eDP-1, preferred, 0x0, 1.6"  # laptop screen
-        "desc:Dell Inc. DELL S2721QS DV61N43, preferred, auto-right, 1.5"  # monitor left
-        "desc:Dell Inc. DELL S2721QS 5971N43, preferred, auto-right, 1.5"  # monitor right
+        "desc:Dell Inc. DELL S2721QS DV61N43, preferred, 1600x0, 1.5"  # monitor left
+        "desc:Dell Inc. DELL S2721QS 5971N43, preferred, 4160x0, 1.5"  # monitor right
         ", preferred, auto, 1"  # random monitors
       ];
       "$mod" = "SUPER";
