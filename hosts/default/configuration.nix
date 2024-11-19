@@ -91,6 +91,7 @@
     bibata-cursors
     gnome-themes-extra
     hyprlock
+    kanata
   ];
 
   programs.waybar.enable = true;
@@ -103,6 +104,27 @@
 
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+
+  services.kanata = {
+    enable = true;
+    keyboards = {
+      internalKeyboard = {
+        devices = [];
+        extraDefCfg = "process-unmapped-keys yes";
+        config = ''
+          (defsrc
+           caps
+          )
+          (defalias
+           caps esc
+          )
+          (deflayer base
+           @caps
+          )
+        '';
+      };
+    };
+  };
 
   security.rtkit.enable = true;
   security.polkit.enable = true;
