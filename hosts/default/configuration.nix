@@ -90,6 +90,7 @@
     swaylock
     bibata-cursors
     gnome-themes-extra
+    hyprlock
   ];
 
   programs.waybar.enable = true;
@@ -104,7 +105,9 @@
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
   security.rtkit.enable = true;
+  security.polkit.enable = true;
   security.pam.services.swaylock = {};
+  security.pam.services.hyprlock = {};
   services.pipewire = {
     enable = true;
     alsa.enable = true;
