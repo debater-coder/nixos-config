@@ -182,6 +182,7 @@
       ];
       exec-once = [
         "waybar"
+        "hyprpaper"
       ];
       input.touchpad = {
         natural_scroll = true;
