@@ -124,7 +124,6 @@
     mako
     libnotify
     rofi-wayland
-    firefox
     nerdfonts
     xwayland
     swaylock
