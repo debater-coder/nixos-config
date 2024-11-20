@@ -74,6 +74,8 @@
 
   stylix.enable = true;
   stylix.autoEnable = true;
+  stylix.targets.kitty.enable = true;
+  programs.kitty.enable = true;
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
