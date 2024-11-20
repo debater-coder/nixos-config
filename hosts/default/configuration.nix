@@ -27,7 +27,6 @@
 
   # Set your time zone.
   time.timeZone = "Australia/Sydney";
-  time.hardwareClockInLocalTime = true;
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_AU.UTF-8";
