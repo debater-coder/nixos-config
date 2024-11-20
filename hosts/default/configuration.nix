@@ -111,6 +111,7 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  services.onedrive.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -140,6 +141,7 @@
     grim
     slurp
     wl-clipboard
+    nautilus
   ];
 
   programs.firefox = {
