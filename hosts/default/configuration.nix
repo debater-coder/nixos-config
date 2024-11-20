@@ -136,6 +136,7 @@
     firefoxpwa
     prusa-slicer
     base16-schemes
+    discord
   ];
 
   programs.firefox = {
