@@ -13,6 +13,8 @@
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
+  boot.loader.systemd-boot.configurationLimit = 5;
+  boot.loader.systemd-boot.editor = false;
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "starscream"; # Define your hostname.
