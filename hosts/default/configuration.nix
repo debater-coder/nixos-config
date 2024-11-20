@@ -137,6 +137,9 @@
     prusa-slicer
     base16-schemes
     discord
+    grim
+    slurp
+    wl-clipboard
   ];
 
   programs.firefox = {
