@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -109,6 +109,11 @@
     '';
   };
 
+  programs.hyprlock = {
+    enable = true;
+    settings.background.path = lib.mkForce "";
+  };
+
   wayland.windowManager.hyprland = {
     enable = true;
     systemd.enable = false;
@@ -148,7 +153,7 @@
 	"$mod_c, J, resizeactive, 0 10"
 	"$mod_c, K, resizeactive, 0 -10"
 	"$mod_c, L, resizeactive, 10 0"
-        "$mod, DELETE, exec, swaylock -u"
+        "$mod, DELETE, exec, hyprlock"
         ''
         ALT, SPACE, exec, rofi -show combi -modes combi -combi-modes "window,drun,run"
         ''
