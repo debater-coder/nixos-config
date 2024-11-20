@@ -93,6 +93,7 @@
     hyprlock
     kanata
     firefoxpwa
+    prusa-slicer
   ];
 
   programs.firefox = {
