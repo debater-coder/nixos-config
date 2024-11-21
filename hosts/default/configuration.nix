@@ -145,6 +145,7 @@
     wl-clipboard
     nautilus
     chromium
+    corefonts
   ];
 
   programs.firefox = {
