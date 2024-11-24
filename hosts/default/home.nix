@@ -265,6 +265,8 @@
         ",XF86MonBrightnessDown, exec, brightnessctl s 10%-"
       ];
       exec-once = [
+        "nm-applet"
+        "blueman-applet"
         "waybar"
         "hyprpaper"
       ];
