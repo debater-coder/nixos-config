@@ -60,6 +60,7 @@
   stylix.enable = true;
   stylix.autoEnable = true;
   stylix.targets.kitty.enable = true;
+  stylix.targets.waybar.enable = false;
   programs.kitty.enable = true;
 
   # Let Home Manager install and manage itself.
@@ -67,6 +68,91 @@
 
   programs.waybar = {
     enable = true;
+    settings = {
+      mainBar = {
+        modules-right = [ "cpu" "memory" "pulseaudio" "network" "battery" "clock" ];
+        modules-center = [ "hyprland/window" ];
+        modules-left = [ "hyprland/workspaces" ];
+
+        clock = {
+          interval = 1;
+          format = "{:%r %d/%m/%Y}";
+        };
+
+        "hyprland/window" = {
+          separate-outputs = true;
+        };
+
+        "hyprland/workspaces" = {
+          persistent-workspaces = {
+            "*" = 3;
+          };
+        };
+
+        cpu.format = "CPU {usage}%";
+        memory.format = "MEM {}%";
+
+        pulseaudio = {
+          format = "{volume}% {icon}";
+          format-bluetooth = "{volume}% {icon}";
+          format-muted = "";
+          format-icons = {
+            "alsa_output.pci-0000_00_1f.3.analog-stereo" = "";
+            "alsa_output.pci-0000_00_1f.3.analog-stereo-muted" = "";
+            headphone = "";
+            hands-free = "";
+            headset = "";
+            phone = "";
+            phone-muted = "";
+            portable = "";
+            car = "";
+            default = [
+              ""
+              ""
+            ];
+          };
+          scroll-step = 1;
+          on-click = "pavucontrol";
+        };
+
+        network = {
+          format = "{ifname}";
+          format-wifi = " {essid} ({signalStrength}%)";
+          format-ethernet = "󰊗 {ipaddr}/{cidr}";
+          format-disconnected = ""; 
+          tooltip-format = "󰊗 {ifname} via {gwaddr}";
+          tooltip-format-wifi = " {essid} ({signalStrength}%)";
+          tooltip-format-ethernet = " {ifname}";
+          tooltip-format-disconnected = "Disconnected";
+        };
+
+        battery = {
+          format = "{capacity}% {icon}";
+          format-charging = " {capacity}%";
+          format-plugged = " {capacity}%";
+          format-alt = "{time} {icon}";
+          format-icons = [
+            "󰂎"
+            "󰁺"
+            "󰁻"
+            "󰁼"
+            "󰁽"
+            "󰁾"
+            "󰁿"
+            "󰂀"
+            "󰂁"
+            "󰂂"
+            "󰁹"
+          ];
+          interval = 5;
+          states = {
+            warning = 30;
+            critical = 10;
+          };
+          tooltip = false;
+        };
+      };
+    };
   };
   
   programs.zsh = {
@@ -151,8 +237,8 @@
         builtins.concatLists (builtins.genList (i:
             let ws = i + 1;
             in [
-              "$mod, code:1${toString i}, workspace, ${toString ws}"
-              "$mod SHIFT, code:1${toString i}, movetoworkspace, ${toString ws}"
+              "$mod, code:1${toString i}, focusworkspaceoncurrentmonitor, ${toString ws}"
+              "$mod SHIFT, code:1${toString i}, movetoworkspacesilent, ${toString ws}"
             ]
           )
         9)
