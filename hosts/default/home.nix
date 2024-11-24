@@ -70,7 +70,7 @@
     enable = true;
     settings = {
       mainBar = {
-        modules-right = [ "cpu" "memory" "pulseaudio" "network" "battery" "clock" ];
+        modules-right = [ "tray" "cpu" "memory" "pulseaudio" "network" "battery" "clock" ];
         modules-center = [ "hyprland/window" ];
         modules-left = [ "hyprland/workspaces" ];
 
