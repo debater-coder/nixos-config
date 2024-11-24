@@ -21,6 +21,7 @@
   networking.wireless.enable = false;  # Enables wireless support via wpa_supplicant.
 
   hardware.pulseaudio.enable = true;
+  services.pipewire.enable = false;
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
 
@@ -196,13 +197,6 @@
   security.polkit.enable = true;
   security.pam.services.swaylock = {};
   security.pam.services.hyprlock = {};
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    jack.enable = true;
-  };
 
   services.xserver.enable = true;
   services.xserver.displayManager.gdm.enable = true;
