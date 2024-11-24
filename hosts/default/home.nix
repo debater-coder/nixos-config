@@ -117,13 +117,9 @@
 
         network = {
           format = "{ifname}";
-          format-wifi = " {essid} ({signalStrength}%)";
+          format-wifi = "  {essid} ({signalStrength}%)";
           format-ethernet = "󰊗 {ipaddr}/{cidr}";
           format-disconnected = ""; 
-          tooltip-format = "󰊗 {ifname} via {gwaddr}";
-          tooltip-format-wifi = " {essid} ({signalStrength}%)";
-          tooltip-format-ethernet = " {ifname}";
-          tooltip-format-disconnected = "Disconnected";
         };
 
         battery = {
@@ -153,6 +149,41 @@
         };
       };
     };
+    style = ''
+      * {
+        border: none;
+        font-family: "JetBrainsMono Nerd Font", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        min-height: 0;
+        background: none;
+        color: @theme_text_color;
+      }
+
+      #waybar {
+        background: @theme_bg_color;
+      }
+
+      #tray menu {
+        background: @theme_bg_color;
+      }
+
+      .module {
+        margin: 0 10px 0;
+      }
+
+
+     #workspaces button:hover {
+       background-color: shade(@theme_bg_color, 1.8);
+     }
+
+     #workspaces button.visible {
+        background-color: shade(#${config.stylix.base16Scheme.base0D}, 0.8);
+     }
+     
+     #workspaces button.visible:hover {
+        background-color: #${config.stylix.base16Scheme.base0D};
+     }
+    '';
   };
   
   programs.zsh = {
