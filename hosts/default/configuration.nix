@@ -160,6 +160,23 @@
     pavucontrol
     networkmanagerapplet
     corefonts
+    gnome-calculator
+    gnome-clocks
+    gnome-disk-utility
+    gnome-connections
+    snapshot
+    gnome.gnome-font-viewer
+    loupe
+    gnomeExtensions.system-monitor
+    gnome-text-editor
+    gnome.totem
+    gnome.gnome-weather
+    apostrophe
+    binary
+    commit
+    gnome-graphs
+    impression
+    gnome-boxes
   ];
 
   programs.firefox = {
