@@ -177,6 +177,7 @@
     gnome-graphs
     impression
     gnome-boxes
+    vscode
   ];
 
   programs.firefox = {
