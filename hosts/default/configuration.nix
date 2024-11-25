@@ -178,6 +178,9 @@
     impression
     gnome-boxes
     vscode
+    gtk4-layer-shell
+    telegram-desktop
+    walker
   ];
 
   programs.firefox = {
