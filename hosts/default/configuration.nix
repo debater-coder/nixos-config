@@ -181,6 +181,7 @@
     gtk4-layer-shell
     telegram-desktop
     walker
+    gnome.gnome-keyring
   ];
 
   programs.firefox = {
