@@ -216,14 +216,14 @@
           )
           (defalias
            caps esc
-           a (tap-hold-press-timeout $tap-time $hold-time a lmet a)
-           s (tap-hold-press-timeout $tap-time $hold-time s lalt s)
-           d (tap-hold-press-timeout $tap-time $hold-time d lsft d)
-           f (tap-hold-press-timeout $tap-time $hold-time f lctl f)
-           j (tap-hold-press-timeout $tap-time $hold-time j rctl j)
-           k (tap-hold-press-timeout $tap-time $hold-time k rsft k)
-           l (tap-hold-press-timeout $tap-time $hold-time l ralt l)
-           ; (tap-hold-press-timeout $tap-time $hold-time ; rmet ;)
+           a (tap-hold-release-timeout $tap-time $hold-time a lmet a)
+           s (tap-hold-release-timeout $tap-time $hold-time s lalt s)
+           d (tap-hold-release-timeout $tap-time $hold-time d lsft d)
+           f (tap-hold-release-timeout $tap-time $hold-time f lctl f)
+           j (tap-hold-release-timeout $tap-time $hold-time j rctl j)
+           k (tap-hold-release-timeout $tap-time $hold-time k rsft k)
+           l (tap-hold-release-timeout $tap-time $hold-time l ralt l)
+           ; (tap-hold-release-timeout $tap-time $hold-time ; rmet ;)
           )
 
           (deflayer base
