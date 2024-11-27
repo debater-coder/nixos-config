@@ -182,6 +182,7 @@
     telegram-desktop
     walker
     gnome.gnome-keyring
+    pkg-config
   ];
 
   programs.firefox = {
