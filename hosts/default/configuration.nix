@@ -212,7 +212,7 @@
           )
           (defvar
            tap-time 300
-           hold-time 300
+           hold-time 500
           )
           (defalias
            caps esc
