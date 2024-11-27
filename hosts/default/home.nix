@@ -299,6 +299,7 @@
       ];
       exec-once = [
         "nm-applet"
+        "udiskie"
         "blueman-applet"
         "waybar"
         "hyprpaper"

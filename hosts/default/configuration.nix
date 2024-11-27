@@ -187,6 +187,7 @@
     walker
     gnome.gnome-keyring
     pkg-config
+    udiskie
   ];
 
   programs.firefox = {
