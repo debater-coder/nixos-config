@@ -20,6 +20,7 @@
   home.packages = with pkgs; [
     onlyoffice-desktopeditors
     rustup
+    gcc
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
