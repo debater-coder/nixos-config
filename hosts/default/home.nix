@@ -262,7 +262,7 @@
 	"$mod_c, L, resizeactive, 10 0"
         "$mod, DELETE, exec, hyprlock"
         ''
-        ALT, SPACE, exec, rofi -show combi -modes combi -combi-modes "window,drun,run"
+        ALT, SPACE, exec, walker"
         ''
       ] ++ (
         # workspaces
@@ -303,6 +303,7 @@
         "blueman-applet"
         "waybar"
         "hyprpaper"
+        "walker --gapplication-service"
       ];
       input.touchpad = {
         natural_scroll = true;
