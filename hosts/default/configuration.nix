@@ -299,10 +299,6 @@
     cursor.name = "Bibata-Modern-Classic";
    
     fonts = {
-      monospace = {
-        package = pkgs.nerd-fonts.jetbrains-mono;
-        name = "JetBrainsMono Nerd Font Mono";
-      };
       sansSerif = {
         package = pkgs.rubik;
         name = "Rubik";
