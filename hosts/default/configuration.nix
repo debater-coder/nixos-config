@@ -188,6 +188,7 @@
     gnome.gnome-keyring
     pkg-config
     udiskie
+    inputs.zen-browser.packages."${system}".default
   ];
 
   programs.firefox = {
