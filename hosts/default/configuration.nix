@@ -169,12 +169,12 @@
     gnome-disk-utility
     gnome-connections
     snapshot
-    gnome.gnome-font-viewer
+    gnome-font-viewer
     loupe
     gnomeExtensions.system-monitor
     gnome-text-editor
-    gnome.totem
-    gnome.gnome-weather
+    totem
+    gnome-weather
     apostrophe
     binary
     commit
@@ -185,7 +185,7 @@
     gtk4-layer-shell
     telegram-desktop
     walker
-    gnome.gnome-keyring
+    gnome-keyring
     pkg-config
     udiskie
     inputs.zen-browser.packages."${system}".default
