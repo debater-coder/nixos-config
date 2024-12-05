@@ -145,7 +145,6 @@
     mako
     libnotify
     rofi-wayland
-    nerdfonts
     xwayland
     swaylock
     bibata-cursors
@@ -200,7 +199,7 @@
   programs.waybar.enable = true;
 
   fonts.packages = with pkgs; [
-    (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" "JetBrainsMono"]; })
+    nerd-fonts.jetbrains-mono
     rubik
     noto-fonts
   ];
@@ -300,7 +299,7 @@
    
     fonts = {
       monospace = {
-        package = pkgs.nerdfonts.override {fonts = ["JetBrainsMono"];};
+        package = pkgs.nerd-fonts.jetbrains-mono;
         name = "JetBrainsMono Nerd Font Mono";
       };
       sansSerif = {
