@@ -119,8 +119,8 @@
 
         network = {
           format = "{ifname}";
-          format-wifi = "  {essid} ({signalStrength}%)";
-          format-ethernet = "󰊗 {ipaddr}/{cidr}";
+          format-wifi = "{essid} ({signalStrength}%)";
+          format-ethernet = "{ipaddr}/{cidr}";
           format-disconnected = ""; 
         };
 
@@ -154,7 +154,7 @@
     style = ''
       * {
         border: none;
-        font-family: "JetBrainsMono Nerd Font", Helvetica, Arial, sans-serif;
+        font-family: "Rubik", "JetBrainsMono Nerd Font", Helvetica, Arial, sans-serif;
         font-size: 14px;
         min-height: 0;
         background: none;
