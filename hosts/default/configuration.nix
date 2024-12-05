@@ -299,6 +299,10 @@
     cursor.name = "Bibata-Modern-Classic";
    
     fonts = {
+      monospace = {
+         package = pkgs.jetbrains-mono;
+         name = "JetBrainsMono";
+      };
       sansSerif = {
         package = pkgs.rubik;
         name = "Rubik";
