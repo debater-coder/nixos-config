@@ -188,6 +188,7 @@
     pkg-config
     udiskie
     inputs.zen-browser.packages."${system}".default
+    nerd-fonts.jetbrains-mono
   ];
 
   programs.firefox = {
