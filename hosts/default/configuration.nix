@@ -149,6 +149,7 @@
     swaylock
     bibata-cursors
     gnome-themes-extra
+    hypridle
     hyprlock
     kanata
     firefoxpwa
