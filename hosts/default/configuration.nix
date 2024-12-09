@@ -196,6 +196,7 @@
     udiskie
     inputs.zen-browser.packages."${system}".default
     nerd-fonts.jetbrains-mono
+    nodejs_22
   ];
 
   programs.firefox = {

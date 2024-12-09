@@ -342,6 +342,8 @@
         no_hardware_cursors = true;
       };
       xwayland.force_zero_scaling = true;
+      gestures.workspace_swipe = true;
+      gestures.workspace_swipe_forever = true;
     };
   };
 }
