@@ -198,6 +198,7 @@
     nerd-fonts.jetbrains-mono
     nodejs_22
     pnpm
+    picocom
   ];
 
   programs.firefox = {
