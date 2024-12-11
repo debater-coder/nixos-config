@@ -200,6 +200,7 @@
     pnpm
     picocom
     brightnessctl
+    probe-rs-tools
   ];
 
   programs.firefox = {
