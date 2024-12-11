@@ -224,12 +224,16 @@
 
     listener = [
       {
-        timeout = 120;                                 # 5min
+        timeout = 120;
+        on-timeout = "brightnessctl set 10%";            # lock screen when timeout has passed
+      }
+      {
+        timeout = 150;
         on-timeout = "loginctl lock-session";            # lock screen when timeout has passed
       }
 
       {
-        timeout = 150;                                 # 5.5min
+        timeout = 180;
         on-timeout = "hyprctl dispatch dpms off";        # screen off when timeout has passed
         on-resume = "hyprctl dispatch dpms on";          # screen on when activity is detected after timeout has fired.
       }

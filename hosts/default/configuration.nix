@@ -199,6 +199,7 @@
     nodejs_22
     pnpm
     picocom
+    brightnessctl
   ];
 
   programs.firefox = {
