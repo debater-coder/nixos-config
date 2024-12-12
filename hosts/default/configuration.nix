@@ -350,6 +350,7 @@ LABEL="probe_rs_rules_end"
     picocom
     brightnessctl
     probe-rs-tools
+    jetbrains.datagrip
   ];
 
   programs.firefox = {
