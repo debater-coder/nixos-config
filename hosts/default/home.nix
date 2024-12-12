@@ -225,7 +225,8 @@
     listener = [
       {
         timeout = 120;
-        on-timeout = "brightnessctl set 10%";            # lock screen when timeout has passed
+        on-timeout = "brightnessctl set 10%";
+        on-resume = "brightnessctl -r";
       }
       {
         timeout = 150;
