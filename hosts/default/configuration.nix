@@ -207,6 +207,7 @@ KERNEL=="ttyACM[0-9]*",MODE="0666"
     brightnessctl
     probe-rs-tools
     jetbrains.datagrip
+    zed-editor
   ];
 
   programs.firefox = {
