@@ -145,8 +145,8 @@ KERNEL=="ttyACM[0-9]*",MODE="0666"
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    neovim 
-    vim 
+    neovim
+    vim
     wget
     kitty
     hyprpaper
@@ -208,6 +208,7 @@ KERNEL=="ttyACM[0-9]*",MODE="0666"
     probe-rs-tools
     jetbrains.datagrip
     zed-editor
+    nixd
   ];
 
   programs.firefox = {
@@ -288,7 +289,7 @@ KERNEL=="ttyACM[0-9]*",MODE="0666"
       prettyName = "Hyprland";
     };
   };
-  
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   stylix = {
@@ -313,10 +314,10 @@ KERNEL=="ttyACM[0-9]*",MODE="0666"
     };
     enable = true;
     autoEnable = true;
-    
+
     cursor.package = pkgs.bibata-cursors;
     cursor.name = "Bibata-Modern-Classic";
-   
+
     fonts = {
       monospace = {
          package = pkgs.jetbrains-mono;
