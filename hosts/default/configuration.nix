@@ -214,6 +214,7 @@ KERNEL=="ttyACM[0-9]*",MODE="0666"
     nil
     docker-compose
     libvirt
+    freerdp3
   ];
 
   programs.firefox = {
