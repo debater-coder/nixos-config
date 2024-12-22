@@ -209,6 +209,7 @@ KERNEL=="ttyACM[0-9]*",MODE="0666"
     jetbrains.datagrip
     zed-editor
     nixd
+    nil
   ];
 
   programs.firefox = {
