@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, inputs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   imports =
@@ -124,8 +124,8 @@ KERNEL=="ttyACM[0-9]*",MODE="0666"
   users.users.hamzah = {
     isNormalUser = true;
     description = "Hamzah";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
+    packages = [];
     shell = pkgs.zsh;
   };
 
@@ -141,6 +141,8 @@ KERNEL=="ttyACM[0-9]*",MODE="0666"
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   services.onedrive.enable = true;
+
+  virtualisation.docker.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -210,6 +212,7 @@ KERNEL=="ttyACM[0-9]*",MODE="0666"
     zed-editor
     nixd
     nil
+    docker-compose
   ];
 
   programs.firefox = {
