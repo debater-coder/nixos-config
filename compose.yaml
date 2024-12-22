@@ -1,5 +1,3 @@
-# For documentation, FAQ, additional configuration options and technical help, visit: https://github.com/dockur/windows
-
 name: "winapps" # Docker Compose Project Name.
 volumes:
   # Create Volume 'data'.
