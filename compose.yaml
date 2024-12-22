@@ -20,7 +20,7 @@ services:
       DISK_SIZE: "64G" # Size of the primary hard disk.
       #DISK2_SIZE: "32G" # Uncomment to add an additional hard disk to the Windows VM. Ensure it is mounted as a volume below.
       #USERNAME: "Docker" # Uncomment to set a custom Windows username. The default is 'Docker'.
-      #PASSWORD: "" # Uncomment to set a password for the Windows user. There is no default password.
+      PASSWORD: "Docker" # Uncomment to set a password for the Windows user. There is no default password.
       HOME: "${HOME}" # Set path to Linux user home folder.
     privileged: true # Grant the Windows VM extended privileges.
     ports:

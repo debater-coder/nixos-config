@@ -213,6 +213,7 @@ KERNEL=="ttyACM[0-9]*",MODE="0666"
     nixd
     nil
     docker-compose
+    libvirt
   ];
 
   programs.firefox = {

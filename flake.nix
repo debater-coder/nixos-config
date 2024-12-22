@@ -36,8 +36,8 @@
           { pkgs, ... }:
           {
               environment.systemPackages = [
-              winapps.packages.x86_64-linux.winapps
-              winapps.packages.x86_64-linux.winapps-launcher # optional
+                winapps.packages.x86_64-linux.winapps
+                winapps.packages.x86_64-linux.winapps-launcher # optional
               ];
           }
         )

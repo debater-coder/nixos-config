@@ -48,12 +48,12 @@
       # - All characters following a '#' are ignored.
 
       # [WINDOWS USERNAME]
-      RDP_USER="MyWindowsUser"
+      RDP_USER="Docker"
 
       # [WINDOWS PASSWORD]
       # NOTES:
       # - If using FreeRDP v3.9.0 or greater, you *have* to set a password
-      RDP_PASS="MyWindowsPassword"
+      RDP_PASS="Docker"
 
       # [WINDOWS DOMAIN]
       # DEFAULT VALUE: (BLANK)
