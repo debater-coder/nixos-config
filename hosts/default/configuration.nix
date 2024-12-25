@@ -212,9 +212,6 @@ KERNEL=="ttyACM[0-9]*",MODE="0666"
     zed-editor
     nixd
     nil
-    docker-compose
-    libvirt
-    freerdp3
   ];
 
   programs.firefox = {
