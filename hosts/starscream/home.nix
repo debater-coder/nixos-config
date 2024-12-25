@@ -195,8 +195,8 @@
     syntaxHighlighting.enable = true;
 
     shellAliases = {
-      update = "sudo nixos-rebuild switch --flake ~/nixos#default";
-      test-update = "sudo nixos-rebuild test --flake ~/nixos#default";
+      update = "sudo nixos-rebuild switch --flake ~/nixos#starscream";
+      test-update = "sudo nixos-rebuild test --flake ~/nixos#starscream";
     };
   };
 
