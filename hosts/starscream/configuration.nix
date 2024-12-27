@@ -45,6 +45,7 @@
   };
 
   programs.zsh.enable = true;
+  programs.direnv.enable = true;
 
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
