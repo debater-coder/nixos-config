@@ -203,12 +203,7 @@
   programs.git = {
     enable = true;
     userName = "debater-coder";
-    userEmail = "52619668+debater-coder@users.noreply.github.com";
-    extraConfig = {
-      credential.helper = "${
-          pkgs.git.override { withLibsecret = true; }
-        }/bin/git-credential-libsecret";
-    };
+    userEmail = "hamzah@syedahmed.net";
   };
 
   programs.neovim = {
