@@ -26,6 +26,7 @@
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
+  ".ssh/allowed_signers".text = "* ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFx4HxNcoOgY8yfFhg2cjhSxeGKTf4TzIighHKWWHumP hamzah@syedahmed.net";
     # # Building this configuration will create a copy of 'dotfiles/screenrc' in
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
@@ -204,6 +205,13 @@
     enable = true;
     userName = "debater-coder";
     userEmail = "hamzah@syedahmed.net";
+    extraConfig = {
+      # Sign all commits using ssh key
+      commit.gpgsign = true;
+      gpg.format = "ssh";
+      gpg.ssh.allowedSignersFile = "~/.ssh/allowed_signers";
+      user.signingkey = "~/.ssh/id_ed25519.pub";
+    };
   };
 
   programs.neovim = {
