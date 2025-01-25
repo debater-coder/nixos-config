@@ -269,6 +269,7 @@
         "desc:Dell Inc. DELL S2721QS DV61N43, preferred, 1600x0, 1.5"  # monitor left
         "desc:Dell Inc. DELL S2721QS 5971N43, preferred, 4160x0, 1.5"  # monitor right
         ", preferred, auto, 1"  # random monitors
+        "monitor=FALLBACK,1920x1080@60,auto,1" # fix hyprlock
       ];
       "$mod" = "SUPER";
       "$mod_s" = "SUPER_SHIFT";
