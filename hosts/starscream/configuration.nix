@@ -140,6 +140,7 @@
     nixd
     nil
     rust-analyzer
+    rshell
   ];
 
   programs.firefox = {
