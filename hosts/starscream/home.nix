@@ -323,14 +323,6 @@
 	"$mod, mouse:273, resizewindow"
 	"$mod, mouse:272, movewindow"
       ];
-      bindl = [
-        ''
-          , switch:on:Lid Switch, exec, hyprctl keyword monitor "eDP-1, disable"
-        ''
-        ''
-          , switch:off:Lid Switch, exec, hyprctl keyword monitor "eDP-1, preferred, 0x0, 1.6"
-        ''
-      ];
       bindel = [
         ",XF86AudioRaiseVolume, exec, wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"
         ",XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
