@@ -172,6 +172,7 @@
   };
 
   programs.hyprlock.enable = true;
+  programs.thunderbird.enable = true;
 
   programs.uwsm = {
     enable = true;
