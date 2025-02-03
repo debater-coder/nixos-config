@@ -265,9 +265,9 @@
     settings = {
       cursor.hide_on_key_press = false;
       monitor = [
-        "eDP-1, preferred, 0x0, 1.6"  # laptop screen
-        "desc:Dell Inc. DELL S2721QS 5971N43, preferred, 1600x0, 1.6"  # monitor left
-        "desc:Dell Inc. DELL S2721QS DV61N43, preferred, 4160x0, 1.6"  # monitor right
+        "desc:Dell Inc. DELL S2721QS 5971N43, preferred, auto, 1.6"  # monitor left
+        "desc:Dell Inc. DELL S2721QS DV61N43, preferred, auto, 1.6"  # monitor right
+        "eDP-1, preferred, auto, 1.6"  # laptop screen
         ", preferred, auto, 1"  # random monitors
         "monitor=FALLBACK,1920x1080@60,auto,1" # fix hyprlock
       ];
