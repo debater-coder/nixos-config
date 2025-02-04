@@ -182,6 +182,8 @@
     };
   };
 
+  services.ollama.enable = true;
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # This value determines the NixOS release from which the default
