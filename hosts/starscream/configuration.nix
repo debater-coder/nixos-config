@@ -140,6 +140,7 @@
     rust-analyzer
     rshell
     swaynotificationcenter
+    onedriver
   ];
 
   programs.firefox = {
