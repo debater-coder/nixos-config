@@ -84,7 +84,6 @@
     git
     gh
     waybar
-    mako
     libnotify
     rofi-wayland
     xwayland
@@ -140,6 +139,7 @@
     nil
     rust-analyzer
     rshell
+    swaynotificationcenter
   ];
 
   programs.firefox = {
