@@ -46,7 +46,7 @@
     network.enable = true;
     stylix = {
       enable = true;
-      wallpaper = ./home/wallpaper.png;
+      wallpaper = ./home/wallpaper.jpg;
     };
   };
 
