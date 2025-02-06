@@ -141,6 +141,8 @@
     rshell
     swaynotificationcenter
     onedriver
+    python3
+    jetbrains.pycharm-professional
   ];
 
   programs.firefox = {
