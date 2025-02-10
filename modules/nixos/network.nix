@@ -9,7 +9,7 @@ in {
 
   config = mkIf cfg.enable {
     networking.networkmanager.enable = true;
-
+    networking.timeServers = options.networking.timeServers.default ++ [ "ntp.example.com" ];
     networking.networkmanager.dispatcherScripts = [
       {
         # https://wiki.archlinux.org/title/NetworkManager#Dynamically_set_NTP_servers_received_via_DHCP_with_systemd-timesyncd
