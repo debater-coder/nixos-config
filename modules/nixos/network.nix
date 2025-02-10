@@ -1,4 +1,4 @@
-{ lib, pkgs, config, ... }:
+{ lib, pkgs, config, options, ... }:
 with lib;
 let
   cfg = config.myNixOS.network;
