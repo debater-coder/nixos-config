@@ -82,7 +82,6 @@
     kitty
     hyprpaper
     git
-    gh
     waybar
     libnotify
     rofi-wayland
