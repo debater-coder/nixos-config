@@ -207,6 +207,10 @@
      #workspaces button.visible:hover {
         background-color: #${config.stylix.base16Scheme.base0D};
      }
+
+     #clock {
+         min-width:  200px;
+     }
     '';
   };
 
