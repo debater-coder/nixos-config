@@ -142,6 +142,7 @@
     onedriver
     python3
     jetbrains.pycharm-professional
+    uv
   ];
 
   programs.firefox = {
