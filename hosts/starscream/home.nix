@@ -58,7 +58,14 @@
   home.sessionVariables = {
     EDITOR = "nvim";
     WLR_NO_HARDWARE_CURSORS = "1";
+    GOROOT = "/usr/local/go";
+    GOPATH = "$HOME/go";
   };
+  home.sessionPath = [
+    "$GOPATH/bin"
+    "$GOROOT/bin"
+    "$HOME/.local/bin"
+  ];
 
   stylix.enable = true;
   stylix.autoEnable = true;
