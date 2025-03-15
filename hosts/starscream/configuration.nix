@@ -145,6 +145,8 @@
     uv
     man-pages
     man-pages-posix
+    obsidian
+    go
   ];
 
   programs.firefox = {
