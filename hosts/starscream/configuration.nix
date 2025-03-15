@@ -147,6 +147,7 @@
     man-pages-posix
     obsidian
     go
+    poppler
   ];
 
   programs.firefox = {
