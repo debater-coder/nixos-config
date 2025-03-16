@@ -150,6 +150,7 @@
     poppler
     poppler-utils
     ninja
+    cmake
   ];
 
   programs.firefox = {
