@@ -148,6 +148,7 @@
     obsidian
     go
     poppler
+    poppler-utils
   ];
 
   programs.firefox = {
