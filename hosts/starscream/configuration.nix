@@ -149,6 +149,7 @@
     go
     poppler
     poppler-utils
+    ninja
   ];
 
   programs.firefox = {
