@@ -218,6 +218,26 @@
      #clock {
          min-width:  200px;
      }
+
+     #battery {
+      padding: 0 10px;
+     }
+     @keyframes blink
+     {
+       to
+       {
+         background-color: #${config.stylix.base16Scheme.base08};
+       }
+     }
+
+     #battery.critical:not(.charging)
+     {
+       animation-name            : blink;
+       animation-duration        : 1s;
+       animation-timing-function : linear;
+       animation-iteration-count : infinite;
+       animation-direction       : alternate;
+     }
     '';
   };
 
