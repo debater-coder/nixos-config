@@ -151,6 +151,7 @@
     poppler-utils
     ninja
     cmake
+    element-element-desktop
   ];
 
   programs.firefox = {
