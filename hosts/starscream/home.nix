@@ -390,6 +390,7 @@
         "blueman-applet"
         "waybar"
         "hyprpaper"
+        "kitty -d timetabl pnpm dev"
       ];
       input.touchpad = {
         natural_scroll = true;
