@@ -196,8 +196,10 @@
 
   services.ollama.enable = true;
 
-  virtualisation.virtualbox.host.enable = true;
-  users.extraGroups.vboxusers.members = [ "hamzah" ];
+  programs.virt-manager.enable = true;
+  users.groups.libvirtd.members = ["hamzah"];
+  virtualisation.libvirtd.enable = true;
+  virtualisation.spiceUSBRedirection.enable = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
