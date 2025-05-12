@@ -196,6 +196,9 @@
 
   services.ollama.enable = true;
 
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "hamzah" ];
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # This value determines the NixOS release from which the default
