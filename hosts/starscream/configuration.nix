@@ -196,6 +196,11 @@
 
   services.ollama.enable = true;
 
+  services.mysql = {
+    enable = true;
+    package = pkgs.mariadb;
+  };
+
   programs.virt-manager.enable = true;
   users.groups.libvirtd.members = ["hamzah"];
   virtualisation.libvirtd.enable = true;
