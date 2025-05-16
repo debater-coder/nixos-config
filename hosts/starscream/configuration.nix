@@ -152,6 +152,7 @@
     ninja
     cmake
     element-desktop
+    ruff
   ];
 
   programs.firefox = {
