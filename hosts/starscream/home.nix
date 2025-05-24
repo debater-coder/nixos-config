@@ -315,6 +315,7 @@
     enable = true;
     systemd.enable = false;
     settings = {
+      windowrule = ["center, class:jetbrains-idea"];
       cursor.hide_on_key_press = false;
       monitor = [
         "eDP-1, preferred, 0x0, 1.6"  # laptop screen
