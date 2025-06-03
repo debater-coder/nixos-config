@@ -153,6 +153,7 @@
     cmake
     element-desktop
     ruff
+    elan
   ];
 
   programs.firefox = {
