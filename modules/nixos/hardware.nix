@@ -13,7 +13,7 @@ in {
       KERNEL=="ttyACM[0-9]*",MODE="0666"
     '';
 
-    hardware.pulseaudio.enable = true;
+    services.pulseaudio.enable = true;
     services.pipewire.enable = false;
     hardware.bluetooth.enable = true;
     services.blueman.enable = true;
