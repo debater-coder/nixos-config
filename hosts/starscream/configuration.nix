@@ -196,6 +196,8 @@
     };
   };
 
+  programs.nix-ld.enable = true;
+
   services.ollama.enable = true;
 
   services.mysql = {
