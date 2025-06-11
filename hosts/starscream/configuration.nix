@@ -163,7 +163,7 @@
   };
 
   programs.waybar.enable = true;
-
+  programs.zoom-us.enable = true;
   programs.neovim.defaultEditor = true;
 
   xdg.portal.enable = true;
