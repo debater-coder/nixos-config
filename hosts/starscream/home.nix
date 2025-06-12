@@ -80,10 +80,16 @@
     enable = true;
     settings = {
       mainBar = {
-        modules-right = [ "tray" "cpu" "memory" "pulseaudio" "network" "battery" "clock" "custom/notification"];
+        modules-right = [ "tray" "idle_inhibitor" "cpu" "memory" "pulseaudio" "network" "battery" "clock" "custom/notification"];
         modules-center = [ "hyprland/window" ];
         modules-left = [ "hyprland/workspaces" ];
-
+        "idle_inhibitor"= {
+            format = "{icon}";
+            format-icons = {
+                activated = "";
+                deactivated = "";
+            };
+        };
         "custom/notification" = {
           tooltip = false;
           format = "{} {icon}";
