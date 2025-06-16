@@ -154,6 +154,7 @@
     element-desktop
     ruff
     elan
+    drawio
   ];
 
   programs.firefox = {
