@@ -14,7 +14,13 @@ in {
     '';
 
     services.pulseaudio.enable = true;
-    services.pipewire.enable = false;
+    services.pipewire = {
+        enable = true;
+        audio.enable = false;
+        pulse.enable = false;
+        alsa.enable = false;
+        wireplumber.enable = true;
+      };
     hardware.bluetooth.enable = true;
     services.blueman.enable = true;
 
