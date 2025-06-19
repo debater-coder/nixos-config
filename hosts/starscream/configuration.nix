@@ -155,6 +155,7 @@
     ruff
     elan
     drawio
+    obs-studio
   ];
 
   programs.firefox = {
