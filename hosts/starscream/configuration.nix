@@ -156,6 +156,7 @@
     elan
     drawio
     obs-studio
+    kicad
   ];
 
   programs.firefox = {
