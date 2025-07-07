@@ -52,6 +52,11 @@
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
+  virtualisation.podman = {
+    enable = true;
+    dockerCompat = true;
+  };
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.hamzah = {
     isNormalUser = true;
@@ -157,6 +162,7 @@
     drawio
     obs-studio
     kicad
+    distrobox
   ];
 
   programs.firefox = {
