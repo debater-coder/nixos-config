@@ -137,7 +137,6 @@
     picocom
     brightnessctl
     probe-rs-tools
-    jetbrains.datagrip
     zed-editor
     nixd
     nil
