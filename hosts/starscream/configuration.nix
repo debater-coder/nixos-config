@@ -91,7 +91,6 @@
     libnotify
     rofi-wayland
     xwayland
-    swaylock
     bibata-cursors
     gnome-themes-extra
     hypridle
@@ -110,18 +109,15 @@
     gnome-calculator
     gnome-clocks
     gnome-disk-utility
-    gnome-connections
     snapshot
     gnome-font-viewer
     loupe
     gnomeExtensions.system-monitor
     gnome-text-editor
     totem
-    gnome-weather
     apostrophe
     binary
     commit
-    gnome-graphs
     impression
     gnome-boxes
     vscode
@@ -150,8 +146,6 @@
     man-pages-posix
     obsidian
     go
-    poppler
-    poppler-utils
     ninja
     cmake
     element-desktop
@@ -160,7 +154,6 @@
     drawio
     obs-studio
     kicad
-    distrobox
   ];
 
   programs.firefox = {
@@ -182,7 +175,7 @@
   security.pam.services.hyprlock = {};
 
   services.xserver.enable = true;
-  services.displayManager.gdm.enable = true;
+  services.xserver.displayManager.gdm.enable = true;
 
   programs.hyprland = {
     enable = true;
@@ -217,7 +210,11 @@
   virtualisation.libvirtd.enable = true;
   virtualisation.spiceUSBRedirection.enable = true;
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings = {
+    experimental-features = [ "nix-command" "flakes" ];
+    substituters = ["https://hyprland.cachix.org"];
+    trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
+  };
   nix.extraOptions = "
   max-jobs = auto  # Allow building multiple derivations in parallel
   keep-outputs = true  # Do not garbage-collect build time-only dependencies (e.g. clang)
