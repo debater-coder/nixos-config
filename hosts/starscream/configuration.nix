@@ -41,7 +41,7 @@
   networking.hostName = "starscream";
 
   myNixOS = {
-    kanata.enable = true;
+    kanata.enable = false;
     hardware.allowUserTTYAccess = true;
     network.enable = true;
     stylix = {
