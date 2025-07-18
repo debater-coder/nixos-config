@@ -145,7 +145,6 @@
     swaynotificationcenter
     onedriver
     python3
-    jetbrains.pycharm-professional
     uv
     man-pages
     man-pages-posix
