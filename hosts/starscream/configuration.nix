@@ -61,7 +61,7 @@
   users.users.hamzah = {
     isNormalUser = true;
     description = "Hamzah";
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" "pipewire" "audio" "realtime"];
     packages = [];
     shell = pkgs.zsh;
   };
@@ -154,6 +154,7 @@
     drawio
     obs-studio
     kicad
+    rtkit
   ];
 
   programs.firefox = {
