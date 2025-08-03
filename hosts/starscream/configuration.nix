@@ -155,6 +155,7 @@
     obs-studio
     kicad
     rtkit
+    graphviz
   ];
 
   programs.firefox = {
