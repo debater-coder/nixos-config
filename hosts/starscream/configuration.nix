@@ -156,6 +156,7 @@
     kicad
     rtkit
     graphviz
+    zlib
   ];
 
   programs.firefox = {
