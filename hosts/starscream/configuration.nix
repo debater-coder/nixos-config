@@ -156,6 +156,7 @@
     kicad
     rtkit
     graphviz
+    hyprpicker
   ];
 
   programs.firefox = {

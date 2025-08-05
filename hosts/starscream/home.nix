@@ -358,6 +358,7 @@
 	"$mod_s, J, movewindow, d"
 	"$mod_s, K, movewindow, u"
 	"$mod_s, L, movewindow, r"
+	"$mod_s, C, exec, hyprpicker"
         ''
         $mod_s, S, exec, grim -g "$(slurp -d)" - | wl-copy
 	''
