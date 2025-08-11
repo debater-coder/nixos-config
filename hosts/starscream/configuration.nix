@@ -157,7 +157,7 @@
     rtkit
     graphviz
     hyprpicker
-    arduino-arduino-ide
+    arduino-ide
   ];
 
   programs.firefox = {
