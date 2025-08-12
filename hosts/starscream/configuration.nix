@@ -211,6 +211,11 @@
     package = pkgs.mariadb;
   };
 
+  # Power saving
+  powerManagement.enable = true;
+  services.thermald.enable = true;
+  services.tlp.enable = true;
+
   programs.virt-manager.enable = true;
   users.groups.libvirtd.members = ["hamzah"];
   virtualisation.libvirtd.enable = true;
