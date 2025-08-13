@@ -158,6 +158,7 @@
     graphviz
     hyprpicker
     arduino-ide
+    logseq
   ];
 
   programs.firefox = {
