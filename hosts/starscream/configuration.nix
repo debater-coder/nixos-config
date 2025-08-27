@@ -159,6 +159,7 @@
     hyprpicker
     arduino-ide
     logseq
+    lazygit
   ];
 
   programs.firefox = {
