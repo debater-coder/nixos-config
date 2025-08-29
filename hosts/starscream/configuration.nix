@@ -37,6 +37,7 @@
       efi.canTouchEfiVariables = true;
     };
   };
+  boot.binfmt.emulatedSystems = [ "aarch64-linux" ];
 
   networking.hostName = "starscream";
 
