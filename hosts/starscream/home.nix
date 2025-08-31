@@ -260,6 +260,7 @@
     shellAliases = {
       update = "sudo nixos-rebuild switch --flake ~/nixos#starscream";
       test-update = "sudo nixos-rebuild test --flake ~/nixos#starscream";
+      lg = "lazygit";
     };
   };
 
