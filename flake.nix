@@ -15,7 +15,9 @@
         ./hosts/starscream/configuration.nix
         inputs.home-manager.nixosModules.default
         inputs.stylix.nixosModules.stylix
+        ./modules/nixos
       ];
     };
+    homeManagerModules.default = ./modules/home-manager;
   };
 }

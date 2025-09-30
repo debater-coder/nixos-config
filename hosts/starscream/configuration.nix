@@ -4,12 +4,6 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ../../modules/nixos/common.nix
-      ../../modules/nixos/kanata.nix
-      ../../modules/nixos/hardware.nix
-      ../../modules/nixos/network.nix
-      ../../modules/nixos/stylix.nix
-      inputs.home-manager.nixosModules.default
     ];
 
   boot = {
@@ -73,7 +67,12 @@
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     users = {
-      "hamzah" = import ./home.nix;
+      "hamzah" = {
+        imports = [
+          ./home.nix
+          inputs.self.homeManagerModules.default
+        ];
+      };
     };
   };
 

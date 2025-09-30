@@ -55,7 +55,7 @@ in {
       };
       image = cfg.wallpaper;
       opacity = {
-        terminal = 0.8;
+        terminal = 1.0;
         desktop = 0.5;
       };
     };
