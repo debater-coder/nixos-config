@@ -47,9 +47,8 @@
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
-  virtualisation.podman = {
+  virtualisation.docker = {
     enable = true;
-    dockerCompat = true;
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
