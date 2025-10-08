@@ -14,10 +14,9 @@ let cfg = config.myHomeManager.desktop; in {
         cursor.hide_on_key_press = false;
         monitor = [
           "eDP-1, preferred, 0x0, 1.6"  # laptop screen
-          "desc:Dell Inc. DELL S2721QS DV61N43, preferred, 1600x0, 1.6"  # monitor left
-          "desc:Dell Inc. DELL S2721QS 5971N43, preferred, 4000x0, 1.6"  # monitor right
+          "desc:Dell Inc. DELL S2721QS DV61N43, 3840x2160@60.00Hz, 1600x0, 1.6"  # monitor left
+          "desc:Dell Inc. DELL S2721QS 5971N43, 3840x2160@60.00Hz, 4000x0, 1.6"  # monitor right
           ", preferred, auto, 1"  # random monitors
-          "monitor=FALLBACK,1920x1080@60,auto,1" # fix hyprlock
         ];
         "$mod" = "SUPER";
         "$mod_s" = "SUPER_SHIFT";
