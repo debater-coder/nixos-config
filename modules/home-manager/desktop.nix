@@ -10,6 +10,7 @@ let cfg = config.myHomeManager.desktop; in {
       enable = true;
       systemd.enable = false;
       settings = {
+        "env" = "AQ_NO_MODIFIERS,1";
         windowrule = ["center, class:jetbrains-idea"];
         cursor.hide_on_key_press = false;
         monitor = [
