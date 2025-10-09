@@ -78,7 +78,7 @@
 
   myHomeManager = {
     shell.enable = true;
-    desktop.enable = true;
+    desktop.enable = false;
     direnv.enable = true;
   };
 

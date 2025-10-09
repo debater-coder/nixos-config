@@ -176,28 +176,17 @@
 
   security.rtkit.enable = true;
   security.polkit.enable = true;
-  security.pam.services.swaylock = {};
-  security.pam.services.hyprlock = {};
+
+  # Enable the login manager
+  services.displayManager.cosmic-greeter.enable = true;
+  # Enable the COSMIC DE itself
+  services.desktopManager.cosmic.enable = true;
+  # Enable XWayland support in COSMIC
+  services.desktopManager.cosmic.xwayland.enable = true;
 
   services.xserver.enable = true;
-  services.xserver.displayManager.gdm.enable = true;
 
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
-
-  programs.hyprlock.enable = true;
   programs.thunderbird.enable = true;
-
-  programs.uwsm = {
-    enable = true;
-    waylandCompositors.hyprland = {
-      binPath = "/run/current-system/sw/bin/Hyprland";
-      comment = "Hyprland session managed by uwsm";
-      prettyName = "Hyprland";
-    };
-  };
 
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
@@ -215,7 +204,6 @@
   # Power saving
   powerManagement.enable = true;
   services.thermald.enable = true;
-  services.tlp.enable = true;
 
   programs.virt-manager.enable = true;
   users.groups.libvirtd.members = ["hamzah"];
