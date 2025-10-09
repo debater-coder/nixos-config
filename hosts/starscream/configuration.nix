@@ -88,7 +88,6 @@
     git
     waybar
     libnotify
-    rofi-wayland
     xwayland
     bibata-cursors
     gnome-themes-extra

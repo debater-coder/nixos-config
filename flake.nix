@@ -2,9 +2,9 @@
   description = "Nixos config flake";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
-    stylix.url = "github:nix-community/stylix/release-25.05";
-    home-manager.url = "github:nix-community/home-manager/release-25.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    stylix.url = "github:nix-community/stylix";
+    home-manager.url = "github:nix-community/home-manager";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
   };
 
