@@ -1,10 +1,10 @@
 { pkgs, inputs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+  ];
 
   boot = {
     plymouth = {
@@ -55,8 +55,15 @@
   users.users.hamzah = {
     isNormalUser = true;
     description = "Hamzah";
-    extraGroups = [ "networkmanager" "wheel" "docker" "pipewire" "audio" "realtime"];
-    packages = [];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "docker"
+      "pipewire"
+      "audio"
+      "realtime"
+    ];
+    packages = [ ];
     shell = pkgs.zsh;
   };
 
@@ -185,6 +192,7 @@
   services.xserver.enable = true;
 
   programs.thunderbird.enable = true;
+  services.onedrive.enable = true;
 
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
@@ -204,14 +212,17 @@
   services.thermald.enable = true;
 
   programs.virt-manager.enable = true;
-  users.groups.libvirtd.members = ["hamzah"];
+  users.groups.libvirtd.members = [ "hamzah" ];
   virtualisation.libvirtd.enable = true;
   virtualisation.spiceUSBRedirection.enable = true;
 
   nix.settings = {
-    experimental-features = [ "nix-command" "flakes" ];
-    substituters = ["https://hyprland.cachix.org"];
-    trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
+    experimental-features = [
+      "nix-command"
+      "flakes"
+    ];
+    substituters = [ "https://hyprland.cachix.org" ];
+    trusted-public-keys = [ "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc=" ];
   };
   nix.extraOptions = "
   max-jobs = auto  # Allow building multiple derivations in parallel
