@@ -165,6 +165,7 @@
     arduino-ide
     logseq
     lazygit
+    distrobox
   ];
 
   programs.firefox = {
@@ -215,6 +216,7 @@
   users.groups.libvirtd.members = [ "hamzah" ];
   virtualisation.libvirtd.enable = true;
   virtualisation.spiceUSBRedirection.enable = true;
+  virtualisation.podman.enable = true;
 
   nix.settings = {
     experimental-features = [
