@@ -32,6 +32,8 @@
     };
   };
   boot.binfmt.emulatedSystems = [ "aarch64-linux" ];
+  boot.kernel.sysctl."kernel.sysrq" = 1;
+  systemd.oomd.enable = true;
 
   networking.hostName = "starscream";
 
