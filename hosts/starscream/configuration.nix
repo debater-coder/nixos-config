@@ -168,6 +168,7 @@
     logseq
     lazygit
     distrobox
+    astyle
   ];
 
   programs.firefox = {
