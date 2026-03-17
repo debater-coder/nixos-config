@@ -169,6 +169,7 @@
     lazygit
     distrobox
     astyle
+    opencode
   ];
 
   programs.firefox = {
