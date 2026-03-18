@@ -1,4 +1,9 @@
-{ pkgs, inputs, ... }:
+{
+  pkgs,
+  inputs,
+  config,
+  ...
+}:
 
 {
   imports = [
@@ -13,6 +18,7 @@
 
     # Enable "Silent Boot"
     consoleLogLevel = 0;
+    initrd.kernelModules = [ "evdi" ];
     initrd.verbose = false;
     kernelParams = [
       "quiet"
@@ -30,6 +36,7 @@
       systemd-boot.editor = false;
       efi.canTouchEfiVariables = true;
     };
+    extraModulePackages = [ config.boot.kernelPackages.evdi ];
   };
   boot.binfmt.emulatedSystems = [ "aarch64-linux" ];
   boot.kernel.sysctl."kernel.sysrq" = 1;
@@ -170,6 +177,7 @@
     distrobox
     astyle
     opencode
+    displaylink
   ];
 
   programs.firefox = {
@@ -195,6 +203,10 @@
   services.desktopManager.cosmic.xwayland.enable = true;
 
   services.xserver.enable = true;
+  services.xserver.videoDrivers = [
+    "displaylink"
+    "modesetting"
+  ];
 
   programs.thunderbird.enable = true;
   services.onedrive.enable = true;
